@@ -17,9 +17,9 @@ export default function Todo(){
     }
 
     let deleteTodo=(id)=>{
-        setTodos((prevTodos)=>todos.filter(
-            (prevTodos)=>{
-              return  prevTodos.id != id;
+        setTodos((prevTodos)=>prevTodos.filter(
+            (todo)=>{
+              return  todo.id != id;
             }
         ))
     }
